@@ -66,3 +66,155 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
+#sectionError {
+  max-width: 900px;
+  width: 100%;
+  overflow: hidden;
+  margin: 30px auto;
+  height: 240px;
+  border-bottom: 1px solid #ccc;
+  position: relative; }
+
+#error404 .infoError {
+  max-width: 520px;
+  float: left;
+  margin: 48px 0 0 20px; }
+  #error404 .infoError span {
+    font-family: arial;
+    font-size: 40px; }
+    #error404 .infoError span strong {
+      font-size: 60px;
+      animation: alerta 2s ease infinite; }
+#error404 .dibujo {
+  width: 300px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  animation: moverY 3s ease 3; }
+@keyframes moverY {
+  10%,40% {
+    top: 200px; }
+  90%, 100% {
+    top: 0; } }
+#error404 .globo1 {
+  width: 220px;
+  height: 300px;
+  background: #CE2844;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  z-index: 1;
+  border-radius: 50%;
+  box-shadow: 1px 1px 16px #831A40 inset; }
+  #error404 .globo1:hover ~ .globo2:before {
+    animation: moverHover .5s ease 1; }
+  #error404 .globo1:hover ~ .globo3:before {
+    animation: moverHover .5s ease 1; }
+#error404 .globo2, #error404 .globo3 {
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  position: absolute;
+  top: 110px;
+  left: 0;
+  z-index: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 1px 1px 13px #7B7B7B inset; }
+#error404 .globo2 {
+  left: 154px; }
+  #error404 .globo2:before {
+    content: "";
+    width: 13px;
+    height: 21px;
+    background: #000;
+    position: absolute;
+    top: 8px;
+    left: -1px;
+    z-index: 10;
+    border-radius: 50%;
+    animation: moverOjos .4s ease 2;
+    transform: rotate(180deg); }
+#error404 .globo3 {
+  left: 30px; }
+  #error404 .globo3:before {
+    content: "";
+    width: 13px;
+    height: 21px;
+    background: #000;
+    position: absolute;
+    top: 8px;
+    left: -1px;
+    z-index: 10;
+    border-radius: 50%;
+    animation: moverOjos .4s ease 2;
+    transform: rotate(180deg); }
+#error404 .globo4 {
+  width: 286px;
+  height: 24px;
+  background: #000;
+  position: absolute;
+  top: 90px;
+  left: -36px;
+  z-index: 10;
+  border-radius: 50%;
+  border: 4px solid #595959; }
+  #error404 .globo4:before {
+    content: "";
+    width: 194px;
+    height: 99px;
+    background: #2C2C2C;
+    position: absolute;
+    top: -92px;
+    left: 42px;
+    z-index: 10;
+    border-radius: 50px 50px 0 0;
+    box-shadow: 2px 28px 67px #000 inset; }
+#error404 .globo5 {
+  width: 170px;
+  height: 73px;
+  background: #000;
+  position: absolute;
+  top: 138px;
+  left: 22px;
+  z-index: 10;
+  border-radius: 50%;
+  transform: rotate(180deg); }
+  #error404 .globo5:before {
+    content: "";
+    width: 181px;
+    height: 74px;
+    background: #CE2844;
+    position: absolute;
+    top: 4px;
+    left: -5px;
+    z-index: 20;
+    border-radius: 50%; }
+
+@keyframes alerta {
+  0% {
+    color: #CE2844;
+    transform: rotateY(60deg); }
+  100% {
+    color: #000000; } }
+@keyframes moverOjos {
+  0% {
+    top: 0px; }
+  90% {
+    left: 30px; } }
+@keyframes moverHover {
+  0% {
+    top: 8px; }
+  90% {
+    left: 30px; } }
+.mysite {
+  display: block;
+  text-align: right;
+  text-align: center;
+  display: block; }
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table; }
+
