@@ -121,7 +121,9 @@
     top: 4px;
     left: -5px;
     z-index: 20;
-    border-radius: 50%; }
+    border-radius: 50%; 
+    cursor: pointer;
+  }
 
 @keyframes alerta {
   0% {
